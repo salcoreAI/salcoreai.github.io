@@ -153,9 +153,11 @@
         text-transform: uppercase;
         color: var(--primary);
         display: inline-flex;
+        justify-content: center;
         align-items: center;
         gap: 8px;
         margin-bottom: 1rem;
+        width: 100%;
       }
 
       .section-label::before {
@@ -171,6 +173,7 @@
         font-size: clamp(1.75rem, 4vw, 2.75rem);
         font-weight: 800;
         margin-bottom: 1rem;
+        text-align: center;
       }
 
       .section-desc {
@@ -438,6 +441,7 @@
         font-weight: 800;
         line-height: 1.1;
         margin-bottom: 1.5rem;
+        text-align: center;
       }
 
       .hero-title .outline-text {
@@ -1027,7 +1031,7 @@
 
       .team-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
       }
 
@@ -1362,11 +1366,15 @@
       }
 
       @media (max-width: 575px) {
+        section {
+          margin: 0 8px;
+        }
         .section-title {
           font-size: 1.75rem;
         }
         .hero-title {
           font-size: clamp(2rem, 8vw, 3rem);
+          text-align: center;
         }
         .domain-topics {
           grid-template-columns: 1fr;
@@ -1437,7 +1445,7 @@
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <!-- Brand -->
-          <a href="#hero" class="navbar-brand">
+          <a href="/" class="navbar-brand">
             <div class="brand-logo">SC</div>
             <span class="brand-name">Sal<span>Core</span> AI</span>
           </a>
@@ -1747,7 +1755,7 @@
           <!-- Vision -->
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div class="mv-card vision h-100">
-              <div class="mv-icon"><i class="fas fa-telescope"></i></div>
+              <div class="mv-icon"><i class="fas fa-binoculars"></i></div>
               <h3
                 style="
                   background: linear-gradient(135deg, #a78bfa, #ec4899);
@@ -2251,7 +2259,7 @@
         <div class="row g-5">
           <!-- Brand -->
           <div class="col-lg-4 footer-brand">
-            <a href="#hero" class="navbar-brand mb-0">
+            <a href="/" class="navbar-brand mb-0">
               <div class="brand-logo">SC</div>
               <span class="brand-name">Sal<span>Core</span> AI</span>
             </a>
@@ -2337,7 +2345,7 @@
                 >
               </li>
               <li>
-                <a href="#"
+                <a href="https://github.com/salcoreAI" target="_blank"
                   ><i class="fab fa-github fa-xs"></i> github.com/salcoreai</a
                 >
               </li>
@@ -2364,7 +2372,12 @@
         <div class="footer-bottom">
           <p>© 2025 SalCore AI — University of Salford. All rights reserved.</p>
           <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a
+              href="https://github.com/salcoreAI"
+              class="social-link"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
             <a
               href="https://www.linkedin.com/company/salcoreai/"
               class="social-link"
